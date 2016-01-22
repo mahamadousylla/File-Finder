@@ -1,4 +1,4 @@
-#Mahamadou Sylla 61549479 and Yilin Zhu 93638450 for Project 1
+#Mahamadou Sylla 61549479 for Project 1
 
 
 from pathlib import Path
