@@ -10,11 +10,11 @@ def check_if_valid_path():
 
     result = False
     
-    while result == False: # always
+    while result == False: #while this is false
 
         input_one = input()
 
-        result = Path(input_one).exists() # if this is true do what?
+        result = Path(input_one).exists() #checks if the path given is valid and stores true or false in variable
 
         if result == True:
             return input_one
@@ -28,12 +28,12 @@ def check_if_valid_search():
 
     search = 'NE'
     
-    while result == False: # always
+    while result == False: #while result is false
 
         input_two = input()
 
 
-        if input_two.split()[0] == 'S' and input_two.split()[-1].isnumeric(): # if this is true do what?
+        if input_two.split()[0] == 'S' and input_two.split()[-1].isnumeric(): #checks if the first input given is 'S' and if the second input on the line given is numeric
             result = True
 
         else:
@@ -52,11 +52,11 @@ def check_if_valid_action():
 
     search = 'PFDT'
     
-    while result == False: # always
+    while result == False: #while result is false
 
         input_three = input()
 
-        result = input_three in search # if this is true do what?
+        result = input_three in search #checks if the input given is in the variable search. Stores true or false in variable
 
         if result == True:
             return input_three
