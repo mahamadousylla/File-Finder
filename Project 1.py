@@ -48,21 +48,21 @@ def check_if_valid_search():
 
 def check_if_valid_action():
 
-    result = False
+    result = False #result is set to False
 
     search = 'PFDT'
     
     while result == False: #while result is false
 
-        input_three = input()
+        input_three = input() #prompts input
 
         result = input_three in search #checks if the input given is in the variable search. Stores true or false in variable
 
-        if result == True:
-            return input_three
-            break
+        if result == True: #if result is True
+            return input_three #input_three is returned
+            break #leave the function
         
-        print('ERROR')
+        print('ERROR') #if result is False print this message
 
     
 
@@ -101,7 +101,7 @@ def search_characteristics(input_two) -> list:
     try:
         
 
-        List = [ ]
+        List = [ ] #empty list
 
 
         if input_two.startswith('N'): #if line starts with N
@@ -196,15 +196,15 @@ def something_interesting(input_three):
 
             result = search_characteristics(input_two) #run search characteristics, which gives us a list
 
-            for path in result:
+            for path in result: #for every path in result
 
-                new_path = str(path)
+                new_path = str(path) #converts path to a string
 
-                print(path)
+                print(path) #prints path to console
 
-                f2 = new_path + '.dup'
+                f2 = new_path + '.dup' #extensin '.dup' is added to path and saved into a variable f2
 
-                shutil.copy(new_path, f2)
+                shutil.copy(new_path, f2) #path is copied and new file f2 is made
             
 
 
@@ -212,7 +212,7 @@ def something_interesting(input_three):
 
             result = search_characteristics(input_two) #run search characteristics, which gives us a list
 
-            for path in result:
+            for path in result: #for every path in result
                 
                 str_name = str(path) #convert path to a string
 
