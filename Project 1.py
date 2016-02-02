@@ -1,4 +1,4 @@
-#Mahamadou Sylla 61549479 for Project 1
+#Mahamadou Sylla
 
 
 from pathlib import Path
